@@ -1,0 +1,128 @@
+
+@media screen and (max-width: 1100px) {
+    header nav div h1 {
+        font-size: 18px;
+    }
+    h2{  
+        font-size: 25px;
+        padding: 8px;
+    }
+    .container-fluid {
+        flex-direction: column;
+    }
+    .grid-inicio {
+        flex-direction: column;
+    }
+    header .navbar-nav {
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .index .grid-inicio .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 .btn {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    header nav div h1 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    h2{  
+        font-size: 18px;
+        padding: 5px;
+    }
+    .portada{
+        font-size: 15px;
+    }
+    .grid-inicio {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-inicio .grid-item1, .grid-item3, .grid-item4 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .index .grid-inicio div {
+        position: relative;
+    }
+    .index .portada p{
+        font-size: 15px;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+    .index .grid-inicio .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 .btn {
+        font-size: 18px;
+    }
+    .contact div .map{
+        height: auto;
+        max-width: 100%;
+    }
+    .contact div img{
+        width: auto;
+        height: auto;
+    }
+    footer h4 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    footer div a {
+        font-size: 10px;
+        font-weight: 180px;
+        display: auto;
+    }
+    footer div a img {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    header nav div h1 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .grid-inicio {
+        grid-template-columns: 1fr;
+    }
+    .index .grid-inicio .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 .btn {
+        font-size: 15px;
+    }
+    footer h4 {
+        font-size: 18px;
+        font-weight: 100;
+    }
+    footer div a {
+        font-size: 10px;
+        font-weight: 50;
+    }
+    footer div a img {
+        width: 30px;
+        height: 30px;
+    }
+    .flex-servicios div, .flex-tramites div, .flex-programas div {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header nav div h1 {
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .portada{
+        font-size: 10px;
+    }
+    .organizacion .institu-container .secre ul li {
+        margin: 5px;
+        font-size: 10px;                    
+    }
+    .flex-servicios div, .flex-tramites div, .flex-programas div{
+        width: 200px;
+        font-weight: 300;
+        font-size: 10px;
+    }
+}

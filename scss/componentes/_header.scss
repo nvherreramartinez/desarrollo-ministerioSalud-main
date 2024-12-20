@@ -1,0 +1,27 @@
+header nav div{
+    display: inline-block;
+    text-decoration: none;
+    background-color: $second-color;
+    color: whitesmoke;
+    font-size: 200;
+    margin: 0;
+    .logoms{
+        width: 150px;
+        height: 70px;
+    }
+    h1{
+        font-size: 35px;
+        padding: 10px;
+        color: whitesmoke;
+        font-weight: 900;
+        span{
+            font-size: 35px;
+            color: rgba(114, 6, 91, 0.897);
+        }
+    }
+    div ul{
+        font-size: 18px;
+        font-weight: 200;
+        justify-content: end;    
+    }            
+}
