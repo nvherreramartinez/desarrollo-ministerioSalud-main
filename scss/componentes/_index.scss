@@ -15,7 +15,7 @@
             gap: 80px;
             padding: 20px;
             margin: 10px;
-            border-radius: 10px;
+            border-radius: nth($border-radius, 3);
         }
     }
     .grid-inicio {
@@ -24,7 +24,7 @@
         grid-auto-rows: 400px;
         gap: 5px;
         position: relative;
-        font-size: 20px;
+        font-size: nth($font-size, 2);
     }
     .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5, .grid-item6 {
         display: flex;
@@ -57,6 +57,9 @@
     }
     .btn {
         background-color: rgb(3, 186, 218);
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
         border: 3px solid black;
         width: 100%;
         height: 25%;
@@ -67,14 +70,14 @@
         &:hover{
             background-color: #eea8dc;
             border: 3px solid $third-color;
+            color: #555;
         }
     }
 }
 .services{
-    .flex-servicios, .flex-tramites{
+    .flex-servicios, .flex-tramites, .flex-programas{
         display: flex;
         flex-direction: column;
-        border: 2px solid $third-color;
         width: 100%;
         height: auto;
         max-width: 100%;
@@ -82,28 +85,28 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding: auto;
-        div{
+        div {
             display: flex;
-            justify-content: right;
-            width: 400px;
-            height: 50px;
-            border: 2px solid $third-color;
-            background-color: $second-color;
+            margin: 10px;
+            width: 50%;
+            max-height: 100px;
+            background: rgb(117,217,244);
+background: linear-gradient(270deg, rgba(117,217,244,1) 9%, rgba(3,218,183,1) 49%, rgba(4,69,80,1) 100%);
+            border-radius: nth($border-radius, 2);
+            padding: 10px;
+            margin-right: 3px;
             text-decoration: none;
             color: whitesmoke;
             font-weight: bold;
-            margin: 10px;
-            padding: 10px;
-            font-weight: 500;
-            font-size: 20px;
             &:hover {
-                background-color: #eea8dc;
+                background: rgb(117,217,244);
+                background: linear-gradient(270deg, rgba(117,217,244,1) 20%, rgba(191,65,191,1) 51%, rgba(4,69,80,1) 100%);
                 border: 3px solid $third-color;
             }
         }
     }
-
     .flex-servicios {
+        align-items: start;
         background-image: url(https://i.postimg.cc/8cQbWHgK/institucional01.jpg);
     }
     .flex-tramites {
@@ -111,38 +114,9 @@
         background-image: url(https://i.postimg.cc/Njzmm416/tramites-final.jpg);
     }
     .flex-programas {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: start;
-        border: 2px solid rgb(7, 7, 7);
-        width: 100%;
-        height: 400px;
-        max-width: 100%;
-        object-fit: contain;
         background-image: url(https://i.postimg.cc/jqHHmybT/saluddigital01.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        div {
-            display: flex;
-            justify-content: right;
-            width: 400px;
-            height: 50px;
-            border: 2px solid black;
-            background-color: rgba(250, 61, 124, 0.974);
-            text-align: right;
-            text-decoration: none;
-            color: whitesmoke;
-            font-weight: bold;
-            margin: 10px;
-            padding: 10px;
-            font-weight: 500;
-            font-size: 20px;
-            &:hover {
-                background-color: #eea8dc;
-                border: 3px solid $third-color;
-            }
-        }
     }
 }
 .organizacion {
@@ -150,16 +124,29 @@
     background: #fff;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: nth($border-radius, 2);
     div ul{
         list-style: none;
     }
     .minister-form-floating {
+        display: flex;
         align-content: center;
-        img {
-            max-width: 100%;
+        width: 100%;
+        height: 150px;
+        .card-img-top {
+            max-width: 80px;
+            height: 100px;
+            border-radius: nth($border-radius, 2);
+        }
+        .minister {
+            color: black;
+            background-color: #a3e6f260;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+            margin: 10px;
+            border-radius: nth($border-radius, 3);
             height: auto;
-            border-radius: 8px;
         }
     }
     .accordion-button{
@@ -174,7 +161,7 @@
         padding: 10px;
         max-width: auto;
         margin: 20px auto;
-        border-radius: 15px;
+        border-radius: nth($border-radius, 4);
         box-shadow: 0 8px 20px  #0000004d;
         .novedades iframe{
             display: flex;
@@ -183,7 +170,7 @@
             max-width: 100%;
             margin: 20px auto;
             box-shadow: 0 8px 20px  #0000004d;
-            border-radius: 15px;
+            border-radius: nth($border-radius, 4);
             object-fit: cover;
         }
     }
@@ -194,7 +181,7 @@
         max-height: 100px;
         background: rgb(117,217,244);
         background: linear-gradient(90deg, rgba(117,217,244,1) 20%, rgba(3,186,218,1) 55%, rgba(4,69,80,1) 100%);
-        border-radius: 5px;
+        border-radius: nth($border-radius, 1);
         text-align: center;
         padding: 10px;
         margin-right: 3px;
@@ -209,7 +196,7 @@
     }
     .carousel-slide .carousel-inner{
         margin: 20px auto;
-        border-radius: 15px;
+        border-radius: nth($border-radius, 4);
         box-shadow: 0 8px 20px  #0000004d;
         .carousel-item-active{
             transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
@@ -246,7 +233,7 @@
         max-height: 100px;
         background: rgb(117,217,244);
         background: linear-gradient(90deg, rgba(117,217,244,1) 20%, rgba(3,186,218,1) 55%, rgba(4,69,80,1) 100%);
-        border-radius: 5px;
+        border-radius: nth($border-radius, 1);
         padding: 10px;
         margin-right: 3px;
         text-decoration: none;
@@ -283,7 +270,7 @@
         max-height: 100px;
         background: rgb(117,217,244);
         background: linear-gradient(90deg, rgba(117,217,244,1) 20%, rgba(3,186,218,1) 55%, rgba(4,69,80,1) 100%);
-        border-radius: 5px;
+        border-radius: nth($border-radius, 1);
         padding: 10px;
         margin-right: 3px;
         text-decoration: none;
@@ -314,7 +301,7 @@
             margin: 20px auto;
             background-color: whitesmoke;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: nth($border-radius, 3);
             box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.302);
             font-family: "Arima", system-ui;
             form{
@@ -332,7 +319,7 @@
                     textarea {
                         padding: 10px;
                         border: 1px solid #ccc;
-                        border-radius: 5px;
+                        border-radius: nth($border-radius, 1);
                         font-size: 15px;
                         width: 100%;
                         box-sizing: border-box;
@@ -379,16 +366,16 @@
     }
     .text-overlay {
         position: absolute;
-        top: 15%;
-        left: 20%;
-        transform: translate(-25%, -60%);
+        top: 22%;
+        left: 21%;
+        transform: translate(-20%, -40%);
         color: black;
         font-size: 18px;
         font-weight: bold;
         text-align: left;
         background-color: #a3e6f260;
         padding: 10px;
-        border-radius: 5px;
+        border-radius: nth($border-radius, 1);
     }
     .grid-contac {
         display: grid;
@@ -396,7 +383,7 @@
         grid-auto-rows: 400px;
         gap: 15px;
         position: relative;
-        font-size: 20px;
+        font-size: nth($font-size, 2);
     }
     .grid-contac1, .grid-contac2 {
         display: flex;

@@ -10,18 +10,19 @@ header nav div{
         height: 70px;
     }
     h1{
-        font-size: 35px;
+        font-size: nth($font-size, 4);
         padding: 10px;
         color: whitesmoke;
         font-weight: 900;
         span{
-            font-size: 35px;
+            font-size: nth($font-size, 4);
             color: rgba(114, 6, 91, 0.897);
         }
     }
     div ul{
-        font-size: 18px;
+        font-size: nth($font-size, 1);
         font-weight: 200;
-        justify-content: end;    
+        justify-content: end;
+        font-weight: bold;
     }            
 }

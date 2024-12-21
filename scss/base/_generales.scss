@@ -11,8 +11,15 @@ body {
     font-style: italic;
     overflow-x: hidden;
 }
-h2{
-    font-size: 35px;
+h2 {
+    @include header-style(nth($font-size, 4), $primary-color);
+}
+
+h3 {
+    @include header-background-style($primary-color);
+}
+/*h2{
+    font-size: nth($font-size, 4);
     color: whitesmoke;
     background-color: $primary-color;
     width: auto;
@@ -25,4 +32,4 @@ h3{
     color: whitesmoke;
     background-color: $primary-color;
     padding: 10px;
-}
+}*/
